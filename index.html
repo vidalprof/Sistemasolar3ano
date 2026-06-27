@@ -1129,7 +1129,7 @@ function iniciarDesafioExtra(){ somClique();
   var dd=DESAFIOS_EXTRA[faseAtual]; faseGuardada=faseAtual;
   var html='<h2>🚀 Desafio Extra</h2><div class="masc-fala"><span class="masc-pic">'+mascote(56,"explicando")+'</span><div class="masc-balao">Mostre que você é um expert!</div></div>';
   html+='<div class="pergunta">'+dd.enunciado+'</div>';
-  html+='<div class="ouvir-area"><button class="ouvir-btn" onclick="falar(BTN_FALA_EXTRA)">🔊 Ouvir</button></div>';
+  html+='<div><button class="btn-falar" onclick="falar(BTN_FALA_EXTRA)">🔊 Ouvir</button></div>';
   html+='<div class="options">';
   for(var i=0;i<dd.opcoes.length;i++){ html+='<button class="opt" id="optx'+i+'" onclick="respDesafioExtra('+i+')">'+dd.opcoes[i]+'</button>'; }
   html+='</div><div class="feedback" id="fb"></div><div id="navarea"></div>';
